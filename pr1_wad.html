@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel ="stylesheet" href ="pr1.css">
+</head>
+<body> 
+   
+    <input type="checkbox" id="sidebar-toggle">
+    <label for="sidebar-toggle" class="toggle-label">
+        <i class="fas fa-bars"></i>
+    </label>
+
+    <nav class="sidebar">
+        <div class="px-3 mb-4">
+            <h4 class="text-white">Admin Panel</h4>
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">
+                    <i class="fas fa-home me-2"></i> Dashboard
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-shopping-cart me-2"></i> Orders
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-users me-2"></i> Users
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-box me-2"></i> Products
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-chart-bar me-2"></i> Analytics
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-cog me-2"></i> Settings
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+   
+    <div class="main-content">
+        <h2 class="mb-4">Dashboard Overview</h2>
+       
+        <div class="row">
+            <div class="col-md-6 col-xl-3 mb-4">
+                <div class="card stat-card border-primary">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-muted">Total Sales</h6>
+                                <h3 class="mb-0">$24,500</h3>
+                            </div>
+                            <div class="text-primary">
+                                <i class="fas fa-dollar-sign fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <span class="text-success">
+                                <i class="fas fa-arrow-up"></i> 8.3%
+                            </span>
+                            <span class="text-muted ms-2">Since last month</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3 mb-4">
+                <div class="card stat-card border-success">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-muted">New Orders</h6>
+                                <h3 class="mb-0">156</h3>
+                            </div>
+                            <div class="text-success">
+                                <i class="fas fa-shopping-bag fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <span class="text-success">
+                                <i class="fas fa-arrow-up"></i> 12.5%
+                            </span>
+                            <span class="text-muted ms-2">Since last week</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3 mb-4">
+                <div class="card stat-card border-info">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-muted">Active Users</h6>
+                                <h3 class="mb-0">2,854</h3>
+                            </div>
+                            <div class="text-info">
+                                <i class="fas fa-users fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <span class="text-success">
+                                <i class="fas fa-arrow-up"></i> 4.2%
+                            </span>
+                            <span class="text-muted ms-2">Since yesterday</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3 mb-4">
+                <div class="card stat-card border-warning">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-muted">Total Products</h6>
+                                <h3 class="mb-0">486</h3>
+                            </div>
+                            <div class="text-warning">
+                                <i class="fas fa-box fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <span class="text-danger">
+                                <i class="fas fa-arrow-down"></i> 2.4%
+                            </span>
+                            <span class="text-muted ms-2">Since last month</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col-md-8 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">Recent Orders</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Customer</th>
+                                        <th>Product</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#12345</td>
+                                        <td>John Doe</td>
+                                        <td>Product A</td>
+                                        <td>$99.99</td>
+                                        <td><span class="badge bg-success">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#12346</td>
+                                        <td>Jane Smith</td>
+                                        <td>Product B</td>
+                                        <td>$149.99</td>
+                                        <td><span class="badge bg-warning">Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#12347</td>
+                                        <td>Mike Johnson</td>
+                                        <td>Product C</td>
+                                        <td>$199.99</td>
+                                        <td><span class="badge bg-info">Processing</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">Top Products</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="mb-1">Product A</h6>
+                                        <small class="text-muted">142 sales</small>
+                                    </div>
+                                    <span class="badge bg-primary rounded-pill">$4,500</span>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="mb-1">Product B</h6>
+                                        <small class="text-muted">98 sales</small>
+                                    </div>
+                                    <span class="badge bg-primary rounded-pill">$3,200</span>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="mb-1">Product C</h6>
+                                        <small class="text-muted">85 sales</small>
+                                    </div>
+                                    <span class="badge bg-primary rounded-pill">$2,800</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
